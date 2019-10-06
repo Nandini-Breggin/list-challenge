@@ -1,0 +1,52 @@
+
+*List Challenges*
+
+threed
+	Given a list of integers, return true if the value 3 appears in the array exactly 	3 times, and no 3's are next to each other.
+
+same_first_last
+
+	Given a list of integers, return true if the array is length 1 or more, and the
+	first element and the last element are equal.
+
+get_sandwich
+	A sandwich is two pieces of bread with something in between. Return the string
+	that is between the first and last appearance of "bread" in the given string, or
+	return the empty string "" if there are not two pieces of bread.
+	*** For example: get_sandwich("breadjambread" => "jam"
+
+shift_left
+	Return a list that is "left-shifted" by one. You may modify and return the given 	array, or return a new array.
+	*** For example: [6, 2, 5, 3] => [2, 5, 3, 6]
+
+can_balance
+	Given a non-empty list, return true if there is a place to split the array so
+	that the sum of the numbers on one side is equal to the sum of the numbers on the 	other side.
+
+count_code
+	Return the number of times that the string "code" appears anywhere in the given 	string, except we'll accept any letter for the 'd'.
+	*** For example: "cope" or "cooe"
+
+middle_way
+	Given 2 number lists, return a new list of length 2 containing their middle
+	element.
+
+either_2_4
+	Given a list of integers return true if the array contains a 2 next to a 2 or a 4
+	next to a 4, but not both.
+
+max_span
+	Consider the left most and rightmost appearances of some value list. We'll say
+	that the "span" is the number of elements between the two. A single value has a
+	span of 1. Return the largest span found in the given list.
+
+g_happy
+	We'll say that a lowercase 'g' in a string is "happy" if there is another 'g'
+	immediately to its left or right. Return true if all the g's in the string are
+	happy.
+
+merge
+	Given two integer lists sorted in increasing order, return a single combined
+	list, still in order.
+	*** For example: merge([1, 2,8], [4, 9, 10] => [1, 2, 4, 8, 9, 10]
+
