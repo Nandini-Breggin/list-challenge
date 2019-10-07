@@ -108,20 +108,26 @@ end
 # puts g_happy("gaggag") # false
 
 
-
-
-
 def either_2_4(list1)
     index = 0
     count  0
 
     list.each do |i|
-        if 
+        if i == 2 && i == list[index +1] || i == 4 && i ++ list[index +1]
+            count +=1
+
         end
+        index = index + 1
     end
+
+    if count == 1
+        return true
+    end
+    return false
 end
 
-puts either_2_4()
+puts either_2_4([1, 2, 2, 4, 5]) # true
+puts either_2_4([0, 3, 4]) # false
 
 
 
