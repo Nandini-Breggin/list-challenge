@@ -46,22 +46,26 @@ end
 # puts get_sandwhich("breadjambreadbutterbreadaa") # jambreadbutter
 
 
-# ? def shift_left(list)
-#    new_shifted list
-# end
+def shift_left(list)
+   i = 0
+   shifted = []
+   two = []
+   two[0] = shifted[0]
+   list.each do |n|
+    
+end
+
+print shift_left([6, 2, 5, 3]) # [2, 5, 3, 6]
 
 
-# print shift_left([6, 2, 5, 3]) # [2, 5, 3, 6]
+def can_balance(list)
+    i = 0
+    length = length.size
+end
 
-
-# ? def can_balance(list)
-#     i = 0
-#     length = length.size
-# end
-
-# puts can_balance([1, 2, 3, 4, 5, 6])
-# puts can_balance([1, 2, 3, 4, 5, 6])
-# puts can_balance([1, 2, 3, 4, 5, 6])
+puts can_balance([1, 2, 3, 4, 5, 6])
+puts can_balance([1, 2, 3, 4, 5, 6])
+puts can_balance([1, 2, 3, 4, 5, 6])
 
 
 
@@ -90,14 +94,15 @@ end
 # print middle_way([1, 2, 3], [3, 4, 5]) # 2, 4 = 6
 
 
-# ? def either_2_4(list1)
+# def either_2_4(list1)
 #     either2 = 0
 #     either4 = 0
 #     list
-
 # end
 
 # puts either_2_4()
+
+
 
 
 # def max_span
