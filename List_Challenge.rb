@@ -37,41 +37,28 @@ end
 # puts same_first_last([1]) # false
 
 
-# ? def get_sandwhich(str)
-# f
-# end
-
-# puts get_sandwhich("breadjambread") # jam
-# puts get_sandwhich("ketchup") # ___
-# puts get_sandwhich("breadjambreadbutterbreadaa") # jambreadbutter
-
-
-def shift_left(list)
-   i = 0
-   shifted = []
-   two = []
-   two[0] = shifted[0]
-   list.each do |n|
-    
-end
-
-print shift_left([6, 2, 5, 3]) # [2, 5, 3, 6]
-
-
 def can_balance(list)
     i = 0
-    length = length.size
+    list.each do |n|
+        left = 0
+        right = 0
+        i2 = 0
+        list.each do |z|
+            if i2 <= i
+                left += z
+            else
+                right =+ z
+            end
+            if left == right
+                return true
+            end
+            i += 1
+        end
+        return false
+    end
 end
 
-puts can_balance([1, 2, 3, 4, 5, 6])
-puts can_balance([1, 2, 3, 4, 5, 6])
-puts can_balance([1, 2, 3, 4, 5, 6])
-
-
-
-# def count_code
-
-# end
+# puts can_balance([1, 2, 3, 4, 5, 6]) # false
 
 
 def middle(list)
@@ -92,21 +79,6 @@ def middle_way(list1, list2)
 end
 
 # print middle_way([1, 2, 3], [3, 4, 5]) # 2, 4 = 6
-
-
-# def either_2_4(list1)
-#     either2 = 0
-#     either4 = 0
-#     list
-# end
-
-# puts either_2_4()
-
-
-
-
-# def max_span
-# end
 
 
 def g_happy(str)
@@ -134,6 +106,63 @@ end
 # puts g_happy("happy") # false
 # puts g_happy("agga") # true
 # puts g_happy("gaggag") # false
+
+
+
+
+
+def either_2_4(list1)
+    index = 0
+    count  0
+
+    list.each do |i|
+        if 
+        end
+    end
+end
+
+puts either_2_4()
+
+
+
+
+# def max_span
+# end
+
+
+
+
+# def count_code
+
+# end
+
+
+
+
+# ? def get_sandwhich(str)
+# f
+# end
+
+# puts get_sandwhich("breadjambread") # jam
+# puts get_sandwhich("ketchup") # ___
+# puts get_sandwhich("breadjambreadbutterbreadaa") # jambreadbutter
+
+
+
+
+
+# def shift_left(list)
+#    i = 0
+#    shifted = []
+#    two = []
+#    two[0] = shifted[0]
+#    list.each do |n|
+
+# end
+
+# print shift_left([6, 2, 5, 3]) # [2, 5, 3, 6]
+
+
 
 # ? def merge(list_1, list_2)
 
