@@ -108,12 +108,12 @@ end
 # puts g_happy("gaggag") # false
 
 
-def either_2_4(list1)
+def either_2_4(list)
     index = 0
-    count  0
+    count = 0
 
     list.each do |i|
-        if i == 2 && i == list[index +1] || i == 4 && i ++ list[index +1]
+        if i == 2 && i == list[index +1] || i == 4 && i == list[index +1]
             count +=1
 
         end
@@ -126,8 +126,29 @@ def either_2_4(list1)
     return false
 end
 
-puts either_2_4([1, 2, 2, 4, 5]) # true
-puts either_2_4([0, 3, 4]) # false
+# puts either_2_4([1, 2, 2, 4, 5]) # true
+# puts either_2_4([0, 3, 4]) # false
+
+
+
+def merge(a, b)
+
+    result = []
+    if a[0] < b[0]
+        result << a.shift
+    else
+        result << b.shift
+    end
+
+    if a.length == 0
+        return result + b
+    elsif b.length == 0
+        return result + a
+    end
+end
+
+merge([1, 2, 5], [4, 8, 10]) # [1, 2, 4, 8, 9, 10]
+
 
 
 
@@ -167,14 +188,3 @@ puts either_2_4([0, 3, 4]) # false
 # end
 
 # print shift_left([6, 2, 5, 3]) # [2, 5, 3, 6]
-
-
-
-# ? def merge(list_1, list_2)
-
-#     new_list = list_1 + list_2
-#     new_list = new_list.sort
-#     return new_list
-# end
-
-# print merge([1, 2, 8], [4, 9, 10]) # [1, 2, 4, 8, 9, 10]
